@@ -44,22 +44,22 @@
 ## Phase 2: バックエンドAPIの構築
 
 ### 2-1. プロジェクトセットアップ
-- [ ] `backend/` ディレクトリの作成と `go mod init`
-- [ ] `Dockerfile` の作成
-- [ ] `render.yaml` の作成（Web Service + Managed Database）
+- [x] `backend/` ディレクトリの作成と `go mod init`
+- [x] `Dockerfile` の作成
+- [x] `render.yaml` の作成（Web Service のみ。DB は Neon を別途使用）
 
 ### 2-2. データベース
-- [ ] `global_rankings` テーブルのスキーマ定義
-- [ ] マイグレーションスクリプトの作成
-- [ ] PostgreSQL接続設定（環境変数で管理）
+- [x] `global_rankings` テーブルのスキーマ定義
+- [x] マイグレーションスクリプトの作成
+- [x] PostgreSQL接続設定（環境変数で管理）
 
 ### 2-3. APIエンドポイント
-- [ ] `POST /api/scores` — スコアのUpsert処理（`device_id` キーで上書き）
-- [ ] `GET /api/rankings` — 上位100件の取得
-- [ ] ヘルスチェックエンドポイント（`GET /health`）
+- [x] `POST /api/scores` — スコアのUpsert処理（`device_id` キーで上書き）
+- [x] `GET /api/rankings` — 上位100件の取得
+- [x] ヘルスチェックエンドポイント（`GET /health`）
 
 ### 2-4. デプロイ
-- [ ] Renderへのデプロイと動作確認
+- [ ] Render Web Service + Neon へのデプロイと動作確認
 
 ---
 
